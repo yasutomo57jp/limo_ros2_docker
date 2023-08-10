@@ -1,6 +1,6 @@
 version: '3'
 services:
-        limo_humble:
+        limo_foxy:
                 network_mode: host
                 volumes:
                         - '/dev:/dev'
@@ -16,8 +16,7 @@ services:
                 tty: true
                 runtime: nvidia
                 restart: always
-                build: ./limo-humble
-                image: limo-humble
-                container_name: limo_humble_dev
-
+                build: ./limo-foxy
+                image: limo-foxy
+                container_name: limo_foxy_dev
 
