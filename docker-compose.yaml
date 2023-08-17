@@ -15,7 +15,6 @@ services:
                         - "a *:* rmw"
                 tty: true
                 runtime: nvidia
-                restart: always
                 build: ./limo-foxy
                 image: limo-foxy
                 container_name: limo_foxy_dev
