@@ -1,4 +1,4 @@
-[https://github.com/](https://github.com/TechShare-inc/limo_ros2_docker)をもとに，カスタマイズした環境です
+[limo_ros2_docker](https://github.com/TechShare-inc/limo_ros2_docker)をもとに，カスタマイズした環境です
 
 
 # limo_ros2_docker
