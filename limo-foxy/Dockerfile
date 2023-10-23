@@ -34,7 +34,14 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 42D5A192B819C5DA \
     ros-foxy-navigation2 \
     ros-foxy-nav2-bringup \
     ros-foxy-rviz2 \
+    ros-foxy-v4l2-camera \
+    python3-pyaudio \
+    libsox-fmt-mp3 \
+    alsa-base \
     && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install gtts
+RUN python3 -m pip install gtts-token
 
 RUN git clone https://github.com/YDLIDAR/YDLidar-SDK.git &&\
     mkdir -p YDLidar-SDK/build && \
