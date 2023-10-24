@@ -38,6 +38,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 42D5A192B819C5DA \
     python3-pyaudio \
     libsox-fmt-mp3 \
     alsa-base \
+    language-pack-ja \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m pip install gtts
