@@ -36,6 +36,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 42D5A192B819C5DA \
     ros-foxy-nav2-bringup \
     ros-foxy-rviz2 \
     ros-foxy-v4l2-camera \
+    ros-foxy-compressed-image-transport \
     python3-pyaudio \
     libsox-fmt-mp3 \
     alsa-base \
