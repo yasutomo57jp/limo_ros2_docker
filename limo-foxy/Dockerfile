@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /root/ros2_ws/
 
-RUN apt install -y language-pack-ja
+RUN apt update && apt install -y language-pack-ja
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 42D5A192B819C5DA \
     && apt-get update \
     && apt-get install -qq -y --no-install-recommends \
