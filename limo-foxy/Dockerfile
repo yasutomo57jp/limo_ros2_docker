@@ -39,6 +39,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 42D5A192B819C5DA \
     ros-foxy-compressed-image-transport \
     ros-foxy-image-transport-plugins \
     python3-pyaudio \
+    sox \ 
     libsox-fmt-mp3 \
     alsa-base \
     alsa-utils \
