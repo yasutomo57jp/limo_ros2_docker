@@ -41,6 +41,9 @@ RUN apt update && apt install -qq -y \
     ros-foxy-v4l2-camera \
     ros-foxy-compressed-image-transport \
     ros-foxy-image-transport-plugins \
+    ros-foxy-image-geometry \
+    ros-foxy-image-publisher \
+    nlohmann-json3-dev \
     python3-pyaudio \
     sox \ 
     libsox-fmt-mp3 \
@@ -51,9 +54,10 @@ RUN python3 -m pip install gtts
 RUN python3 -m pip install gtts-token
 
 RUN git clone https://github.com/YDLIDAR/YDLidar-SDK.git &&\
-    git checkout v1.0.1 && \
     mkdir -p YDLidar-SDK/build && \
-    cd YDLidar-SDK/build &&\
+    cd YDLidar-SDK &&\
+    git checkout v1.0.1 && \
+    cd build &&\
     cmake ..&&\
     make &&\
     make install &&\

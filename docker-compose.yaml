@@ -1,6 +1,27 @@
 version: '2.3'
 services:
-        limo_foxy:
+        #        limo_foxy:
+        #                network_mode: host
+        #                volumes:
+        #                        - '/dev:/dev'
+        #                        - '/tmp/.X11-unix:/tmp/.X11-unix'
+        #                        - '$PWD/src:/root/ros2_ws/src_ext'
+        #                privileged: true
+        #                environment:
+        #                        - "XAUTHORITY=$AUTH"
+        #                        - "LIBGL_ALWAYS_SOFTWARE=1"
+        #                        - "DISPLAY=$DISPLAY"
+        #                        - "AUTH=$AUTH"
+        #                        - "PULSE_COOKIE=/tmp/pulse/cookie"
+        #                        - "PULSE_SERVER=unix:/tmp/pulse/native"
+        #                device_cgroup_rules:
+        #                        - "a *:* rmw"
+        #                tty: true
+        #                runtime: nvidia
+        #                build: ./limo-foxy
+        #                image: limo-foxy
+        #                container_name: limo_foxy_dev
+        limo_humble:
                 network_mode: host
                 volumes:
                         - '/dev:/dev'
@@ -18,7 +39,6 @@ services:
                         - "a *:* rmw"
                 tty: true
                 runtime: nvidia
-                build: ./limo-foxy
-                image: limo-foxy
-                container_name: limo_foxy_dev
-
+                build: ./limo-humble
+                image: limo-humble
+                container_name: limo_humble_dev
